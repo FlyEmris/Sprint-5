@@ -23,3 +23,25 @@ body {
     font-family: var(--primary-font);
     background-color: var(--primary-color);
 }
+
+.login-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.login-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--secondary-font);
+}
+
+.login-buttons button:hover {
+    background-color: var(--text-light);
+    color: var(--secondary-color);
+}
