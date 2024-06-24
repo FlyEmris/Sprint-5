@@ -45,3 +45,26 @@ body {
     background-color: var(--text-light);
     color: var(--secondary-color);
 }
+
+/* Container for the game thumbnail and text */
+.game-thumbnail-container {
+    text-align: center;
+    margin-top: 50px; /* Adjust the margin as needed */
+    width: 50%; /* Set the container width to 100% */
+    margin-left: 25%;
+
+}
+
+/* Styling for the game thumbnail */
+.game-thumbnail-container img {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    border-radius: 10px; /* Add rounded corners to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the image */
+}
+
+/* Styling for the text below the game thumbnail */
+.game-thumbnail-container p {
+    margin-top: 10px; /* Add some space between the image and the text */
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    color: #023047 /* Use a darker text color */
+}
