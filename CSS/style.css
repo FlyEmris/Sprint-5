@@ -10,18 +10,33 @@
     /* other colors #023047, #FFB703, #FB8500 */
 }
 
-header {
-    background-color: var(--secondary-color);
-    color: var(--text-light);
-    text-align: center;
-    padding: 10px;
-    font-family: var(--secondary-font);
-    font-size: 2rem;
-}
-
 body {
     font-family: var(--primary-font);
     background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: linear-gradient(135deg, var(--secondary-color), var(--text-dark));
+    color: #023047;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin: 5px 0 0 0;
 }
 
 .login-buttons {
@@ -49,22 +64,28 @@ body {
 /* Container for the game thumbnail and text */
 .game-thumbnail-container {
     text-align: center;
-    margin-top: 50px; /* Adjust the margin as needed */
-    width: 50%; /* Set the container width to 100% */
-    margin-left: 25%;
-
+    margin-top: 30px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Styling for the game thumbnail */
 .game-thumbnail-container img {
-    max-width: 100%; /* Make sure the image doesn't exceed the container width */
-    border-radius: 10px; /* Add rounded corners to the image */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the image */
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the game thumbnail */
+.game-thumbnail-container img:hover {
+    transform: scale(1.1);
 }
 
 /* Styling for the text below the game thumbnail */
 .game-thumbnail-container p {
-    margin-top: 10px; /* Add some space between the image and the text */
-    font-size: 1.2rem; /* Adjust the font size as needed */
-    color: #023047 /* Use a darker text color */
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #023047;
 }
